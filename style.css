@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+
+    text-align: center;
+    font-family: 'Carlito', sans-serif;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), #1A1E26, #41454d);
+    
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 4px 0;
+    text-align: center;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#main {
+    color: #b8b2b0;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header {
+    padding: 0 40px;
+}
+
+#pytania {
+    padding: 30px 32px;
+}
+
+.main-box {
+    padding: 32px 0;
+}
+
+.question-box {
+    display: flex;
+    margin-bottom: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.answers-box {
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type="radio"]+label:before {
+    content: '';
+    background: #fff;
+    border-radius: 30%;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    position: relative;
+    top: -0.2em;
+    
+}
+
+input[type="radio"]:checked+label:before {
+    background-color: #0b0a0e;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+input[type="radio"]:focus+label:before {
+    outline: none;
+    border-color: #0b0a0e;
+}
+
+#check {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#check-btn {
+    padding: 12px 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 28px;
+    border: 4px double #fff;
+    z-index: 1;
+    color: #fff;
+    font-family: 'Carlito', sans-serif;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+#check-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0b0a0e;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0b0a0e;
+    
+}
+
+#check-btn:hover {
+    color: #fff;
+    border: 4px solid #141318;
+}
+
+#check-btn:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+#wynik {
+    padding: 20px 40px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+thead td {
+    font-weight: bold;
+    background-color: #0b0a0e;
+}
+
+td {
+    border: 2px solid #fff;
+    padding: 6px;
+}
